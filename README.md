@@ -1,22 +1,26 @@
-# Automation with Python and Selenium
+# Python と Selenium を用いた自動化
 
-## A shopping bot program utilizing Selenium for Python
+## Selenium for Python を活用したショッピングボットプログラム
 
-<p align = 'center'>
-    <img src="./screenshots/testbotgif.gif" width="40%">
-</p>
+### 概要
 
-### About
-- A simple terminal guided bot that takes an item you want to purchase, adds to cart, and automatically pays and checksout
-- In the future I hope to make an automation program that runs much faster along with the capability to avoid bot detection software and autofill reCaptcha fields.
-- To use the bot make sure selenium is installed and to create a config.py in the directory that includes a key object containing the following:
-    - First / Last name
-    - Address, City, Postal Code, Phone Number
-    - Credit Card Number, Name on Credit Card, Credit Card Expiry Date, and Credit Card CVV
+* 購入したい商品を入力すると、自動でカート追加から決済・チェックアウトまでを行う、ターミナル操作型のシンプルなボットです。
+* 将来的には、より高速に動作する自動化プログラムへの改良に加え、Bot検知システムの回避や、reCAPTCHA の自動入力機能の実装も目指しています。
+* 利用する際は、事前に Selenium をインストールし、プロジェクトディレクトリ内に `config.py` を作成してください。
+  また、以下の情報を含む `key` オブジェクトを設定する必要があります。
 
-### Software
-- **Python3** to create the script. I picked Python over Java for simplicity sake
-- **Selenium** for python to run the automated script and give access to browser control via driver.
+  * 氏名（姓・名）
+  * 住所、市区町村、郵便番号、電話番号
+  * クレジットカード番号、カード名義、有効期限、CVV
 
-### Author
- - **Sasank Ganapathiraju**
+### 使用技術
+
+* **Python 3**
+  スクリプト作成には Python3 を使用しています。シンプルで扱いやすいことから、Java ではなく Python を選択しました。
+
+* **Selenium for Python**
+  ブラウザ操作を自動化し、ドライバー経由でブラウザ制御を行うために使用しています。
+
+### 作者
+
+* **Sasank Ganapathiraju**
